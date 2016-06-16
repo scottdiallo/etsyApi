@@ -1,0 +1,19 @@
+{
+  "name": "etsyapi",
+  "version": "1.0.0",
+  "description": "app that allow wannabe entrepreneur to see most popular/best selling product by location so they can start selling online.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdiallo/etsyApi.git"
+  },
+  "author": "Scott diallo <scott@kynd.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottdiallo/etsyApi/issues"
+  },
+  "homepage": "https://github.com/scottdiallo/etsyApi#readme"
+}
