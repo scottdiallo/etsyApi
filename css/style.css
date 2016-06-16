@@ -9,11 +9,27 @@ body {
     background-image: url(../images/transparent.jpg);
     height: 850px;
     width: 100%;
+    margin: -10px;
+}
+
+.hero-text {
+    font-size: 4em;
+    font-family: inherit;
+    color: white;
+}
+
+.sub-hero {
+    width: 784px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    color: ghostwhite;
+    font-size: 1.42em;
 }
 
 form {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 5%;
 }
 
 #search-field {
@@ -23,4 +39,13 @@ form {
     font-weight: 200;
     letter-spacing: 4px;
     outline: none;
+}
+
+#searchBtn {
+    padding: 8px 15px;
+    font-size: 1.6em;
+    border-radius: 10px;
+    background-color: crimson;
+    outline: none;
+    cursor: pointer;
 }
