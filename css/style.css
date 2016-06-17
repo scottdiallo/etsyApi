@@ -3,6 +3,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -30px;
+    color: #fff;
 }
 
 body {
@@ -48,4 +49,9 @@ form {
     background-color: crimson;
     outline: none;
     cursor: pointer;
+}
+
+#resultSection {
+    text-align: center;
+    margin-top: 10px;
 }
