@@ -63,3 +63,8 @@ img {
     margin-left: 32%;
     margin-top: 25px;
 }
+
+.alertmsg {
+    text-align: center;
+    color: red;
+}
