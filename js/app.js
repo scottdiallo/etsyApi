@@ -20,7 +20,7 @@ $(document).ready(function () {
                 console.log(data);
                 $('#resultSection').empty();
                 if (data.count > 0) {
-                    $.each(data.results, function (i, item) {
+                    $.each(data.results, function (i, results) {
                         $('img').attr('src', results.Images[0].url_75x75);
                     })
                 }
