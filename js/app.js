@@ -11,7 +11,7 @@ $(document).ready(function () {
         //prevent user from sending empty request
         //$('#searchField').empty())
         $('#resultSection').empty();
-        $('p').text('Searching ... ' + terms).appendTo('#resultSection');
+        //$('p').text('Searching ... ' + terms).appendTo('#resultSection');
 
         $.getJSON({
             url: etsyUrl,
@@ -21,12 +21,23 @@ $(document).ready(function () {
                 $('#resultSection').empty();
                 if (data.count > 0) {
                     $.each(data.results, function (i, results) {
-                        $('img').attr('src', results.Images[0].url_75x75);
-                    })
-                }
+                        $('img').attr('src', results.Images[0].url_75x75).appendTo("#resultSection").wrap("<a href='" + results.url + "'> </a>");
+                        if (i % 4 == 3) {
+                            $("</img>").appendTo('#resultSection');
+                        }
+                    });
+                    //                } else if
+                    //                $('<p>no results!</p>').appendTo('#resultSection');
+                    //
+                    //            } else {
+                    //                $('resultSection').empty();
+                    //                alert(data.error);
+                    //            }
+                };
+                //        return false;
+                //console.log(data);
             }
-        });
-        //console.log(data);
-    });
 
+        });
+    });
 });
