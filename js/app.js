@@ -33,6 +33,8 @@ $(document).ready(function () {
                 //console.log(data);
             }
         });
+        //empty input field when form is submitted
+        $('#searchField').val('');
 
     });
 });
