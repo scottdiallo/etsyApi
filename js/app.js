@@ -7,7 +7,7 @@ $(document).ready(function () {
         event.preventDefault();
         var terms = $('#searchField').val();
         //console.log(terms);
-        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=6&includes=Images:1&api_key=" + api_key;
+        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=4&includes=Images:1&api_key=" + api_key;
         //prevent user from sending empty request
         //$('#searchField').empty())
         $('#resultSection').empty();
@@ -24,8 +24,8 @@ $(document).ready(function () {
                     $.each(data.results, function (i, results) {
                         $('img').attr('src', results.Images[0].url_75x75).appendTo("#resultSection").wrap("<a href='" + results.url + "'> </a>");
 
-                        if (i % 6 == 3) {
-                            $("</img>").appendTo('#resultSection');
+                        if (i % 4 == 3) {
+                            $('<br/>').appendTo('#resultSection');
                         }
                     });
 
