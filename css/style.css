@@ -26,6 +26,9 @@ body {
     margin-bottom: 45px;
     color: ghostwhite;
     font-size: 1.42em;
+    font-family: monospace;
+    width: 100%;
+    line-height: 1.7;
 }
 
 form {
