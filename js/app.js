@@ -7,8 +7,8 @@ $(document).ready(function () {
         event.preventDefault();
         var terms = $('#searchField').val();
         //console.log(terms);
-        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=12&includes=Images:1&currency_code&api_key=" + api_key;
-        $('#resultSection').empty();
+        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=12&includes=Images:1&api_key=" + api_key;
+        //$('#resultSection').empty();
 
         //prevent empty search
         if (terms == '') {
@@ -19,16 +19,31 @@ $(document).ready(function () {
             dataType: 'JSONP',
             success: function (data) {
                 console.log(data);
-                $('#resultSection').empty();
-                if (data.count > 0) {
-                    $.each(data.results, function (i, results) {
-                        $('img').attr('src', results.Images[0].url_75x75).appendTo("#resultSection").wrap("<a href='" + results.url + "'> </a>");
-                        if (i % 4 == 3) {
-                            $('<br/>').appendTo('#resultSection');
-                        }
-                    });
 
-                };
+                //                console.log(data.results[0].currency_code);
+                //                console.log(data.results[0].views);
+                //                console.log(data.results[0].price);
+                //                console.log(data.results[0].title);
+                //                console.log(data.results[0].description);
+
+                $('.item-infos').empty();
+                var htmlOutput = "";
+                //display at least 4 best selling item
+                $.each(data.results, function (i, result) {
+                    htmlOutput += '<li>';
+                    htmlOutput += '<h2 class="iteTitle">' + result.title + '</h2>';
+                    htmlOutput += '<div class="itaemImage" style="background-image: url(' + result.Images[0].url_75x75 + ')"></div>';
+                    htmlOutput += '<div class="itemDetailsWrapper">';
+                    htmlOutput += '<p class="itemPrice"><span class="itemCurrentcy">' + result.currency_code + '</span>' + result.price + '</p>';
+                    htmlOutput += '<p class="itemViews">' + result.views + '</p>';
+                    htmlOutput += '</div>';
+                    htmlOutput += '<p class="itemDescription">' + result.description + '</p>';
+                    htmlOutput += '</li>';
+
+
+                });
+                $('.item-infos').append(htmlOutput);
+
                 //console.log(data);
             }
         });
@@ -37,4 +52,7 @@ $(document).ready(function () {
         $('#searchField').val('');
 
     });
+
+    //show information about the best selling item, i.e qty sold, price,sellers
+    //Perhaps another api request?
 });
