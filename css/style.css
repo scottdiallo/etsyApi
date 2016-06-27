@@ -75,10 +75,22 @@ img {
 }
 
 .item-infos {
-    width: 500px;
+    width: 1270px;
     margin: 0 auto;
+    display: inline-flex;
+    list-style-type: upper-roman;
 }
 
 li {
     width: 300px;
+}
+
+.iteTitle {
+    font-size: 18px;
+    color: teal;
+    font-weight: bold;
+}
+
+.itemDetailsWrapper {
+    line-height: 1px;
 }
