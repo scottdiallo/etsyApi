@@ -32,10 +32,10 @@ $(document).ready(function () {
                 $.each(data.results, function (i, result) {
                     htmlOutput += '<li>';
                     htmlOutput += '<h2 class="iteTitle">' + result.title + '</h2>';
-                    htmlOutput += '<div class="itaemImage" style="background-image: url(' + result.Images[0].url_75x75 + ')"></div>';
+                    htmlOutput += '<div class="itemImage" style="background-image: url(' + result.Images[0].url_75x75 + ')"></div>';
                     htmlOutput += '<div class="itemDetailsWrapper">';
-                    htmlOutput += '<p class="itemPrice"><span class="itemCurrentcy">' + result.currency_code + '</span>' + result.price + '</p>';
-                    htmlOutput += '<p class="itemViews">' + '<h4>Views</h4>' + result.views + '</p>';
+                    htmlOutput += '<p class="itemPrice"><span class="itemCurrentcy">' + result.currency_code + ' ' + '</span>' + result.price + '</p>';
+                    htmlOutput += '<p class="itemViews">' + '<h3>Views: </h3>' + result.views + '</p>';
                     htmlOutput += '</div>';
                     htmlOutput += '<p class="itemDescription">' + result.description + '</p>';
                     htmlOutput += '</li>';
@@ -54,5 +54,8 @@ $(document).ready(function () {
     });
 
     //show information about the best selling item, i.e qty sold, price,sellers
-    //Perhaps another api request?
+
+//    $('button').hover(function () {
+            //        $('#searchBtn').backgroundColor('white');
+            //    })
 });
