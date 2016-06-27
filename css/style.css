@@ -92,6 +92,7 @@ img {
 
 li {
     width: 300px;
+    margin-right: 10px;
 }
 
 .iteTitle {
@@ -99,8 +100,17 @@ li {
     color: #9E9E9E;
     font-weight: bolder;
     font-family: fantasy;
+    max-height: 1em;
+    overflow: hidden;
 }
 
 .itemDetailsWrapper {
     line-height: 1px;
+}
+
+.itemImage {
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
