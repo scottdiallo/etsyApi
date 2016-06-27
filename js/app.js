@@ -6,8 +6,8 @@ $(document).ready(function () {
     $('#submitForm').on('submit', function (event) {
         event.preventDefault();
         var terms = $('#searchField').val();
-        //console.log(terms);
-        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=12&includes=Images:1&api_key=" + api_key;
+        console.log(terms);
+        var etsyUrl = "https://openapi.etsy.com/v2/listings/active.js?keywords=" + terms + "&limit=4&includes=Images:1&api_key=" + api_key;
         //$('#resultSection').empty();
 
         //prevent empty search
