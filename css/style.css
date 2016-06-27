@@ -11,6 +11,11 @@ html {
     color: #fff;
 }
 
+#searchBtn:hover {
+    background: gold;
+    color: white;
+}
+
 body {
     background-image: url(../images/transparent.jpg);
     height: 100%;
@@ -53,7 +58,8 @@ form {
     padding: 8px 15px;
     font-size: 1.6em;
     border-radius: 10px;
-    background-color: crimson;
+    background-color: #d5641c;
+    color: white;
     outline: none;
     cursor: pointer;
 }
@@ -72,7 +78,9 @@ img {
 
 .alertmsg {
     text-align: center;
-    color: red;
+    color: #f55353;
+    font-size: 24px;
+    padding-right: 53px;
 }
 
 .item-infos {

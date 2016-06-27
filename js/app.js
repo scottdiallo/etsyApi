@@ -53,9 +53,5 @@ $(document).ready(function () {
 
     });
 
-    //show information about the best selling item, i.e qty sold, price,sellers
 
-//    $('button').hover(function () {
-            //        $('#searchBtn').backgroundColor('white');
-            //    })
 });
