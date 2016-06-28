@@ -20,7 +20,7 @@ body {
     background-image: url(../images/transparent.jpg);
     height: 100%;
     width: 100%;
-    margin: -10px;
+    margin: -60px;
 }
 
 .hero-text {
@@ -86,13 +86,14 @@ img {
 .item-infos {
     width: 1270px;
     margin: 0 auto;
+    margin-left: 75px;
     display: inline-flex;
     list-style-type: none;
 }
 
 li {
     width: 300px;
-    margin-right: 10px;
+    margin-right: 33px;
 }
 
 .iteTitle {
@@ -113,4 +114,11 @@ li {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+
+.itemDescription {
+    background-color: black;
+    border-radius: 5px;
 }

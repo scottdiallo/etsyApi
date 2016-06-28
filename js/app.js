@@ -36,7 +36,7 @@ $(document).ready(function () {
                     htmlOutput += '<div class="itemImage" style="background-image: url(' + result.Images[0].url_75x75 + ')"></div></a>';
                     htmlOutput += '<div class="itemDetailsWrapper">';
                     htmlOutput += '<p class="itemPrice"><span class="itemCurrentcy">' + result.currency_code + ' ' + '</span>' + result.price + '</p>';
-                    htmlOutput += '<p class="itemViews">' + '<h3>Views: </h3>' + result.views + '</p>';
+                    htmlOutput += '<p class="itemViews"><span> Views: </span>' + result.views + '</p>';
                     htmlOutput += '</div>';
                     htmlOutput += '<p class="itemDescription">' + result.description + '</p>';
                     htmlOutput += '</li>';
