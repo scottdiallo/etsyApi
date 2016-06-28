@@ -20,11 +20,11 @@ body {
     background-image: url(../images/transparent.jpg);
     height: 100%;
     width: 100%;
-    margin: -60px;
+    margin-top: -50px;
 }
 
 .hero-text {
-    font-size: 4em;
+    font-size: 7em;
     font-family: inherit;
     color: white;
 }
@@ -35,15 +35,15 @@ body {
     margin: 0 auto;
     margin-bottom: 45px;
     color: ghostwhite;
-    font-size: 1.42em;
+    font-size: 2.42em;
     font-family: monospace;
     width: 100%;
-    line-height: 1.7;
+    line-height: 1.3em;
+    margin-top: -30px;
 }
 
 form {
     text-align: center;
-    padding-top: 5%;
 }
 
 #searchField {
@@ -119,6 +119,6 @@ li {
 }
 
 .itemDescription {
-    background-color: black;
+    background-color: #565050;
     border-radius: 5px;
 }
