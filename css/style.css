@@ -18,15 +18,16 @@ html {
 
 body {
     background-image: url(../images/transparent.jpg);
-    height: 100%;
     width: 100%;
-    margin-top: -50px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .hero-text {
     font-size: 7em;
     font-family: inherit;
     color: white;
+    line-height: 2rem;
 }
 
 .sub-hero {
@@ -67,6 +68,7 @@ form {
 #resultSection {
     text-align: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 img {
@@ -84,16 +86,18 @@ img {
 }
 
 .item-infos {
-    width: 1270px;
+    width: 80%;
     margin: 0 auto;
-    margin-left: 75px;
-    display: inline-flex;
+    display: block;
     list-style-type: none;
 }
 
 li {
-    width: 300px;
-    margin-right: 33px;
+    width: 22%;
+    margin-right: 1%;
+    margin-left: 1%;
+    text-align: center;
+    display: inline-block;
 }
 
 .iteTitle {
@@ -124,4 +128,5 @@ li {
     height: 300px;
     overflow: hidden;
     padding: 10px;
+    line-height: 26px;
 }
