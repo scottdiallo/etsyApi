@@ -121,4 +121,7 @@ li {
 .itemDescription {
     background-color: #565050;
     border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+    padding: 10px;
 }
