@@ -1,13 +1,4 @@
 html {
-    /*
-    background: url("../images/background2.jpg") no-repeat center center fixed;
-    background-repeat: no-repeat;
-    margin-top: -30px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-*/
     color: #fff;
 }
 
@@ -24,7 +15,7 @@ body {
 }
 
 .hero-text {
-    font-size: 7em;
+    font-size: 6em;
     font-family: inherit;
     color: white;
     line-height: 2rem;
@@ -36,7 +27,7 @@ body {
     margin: 0 auto;
     margin-bottom: 45px;
     color: ghostwhite;
-    font-size: 2.42em;
+    font-size: 2em;
     font-family: monospace;
     width: 100%;
     line-height: 1.3em;
@@ -130,3 +121,56 @@ li {
     padding: 10px;
     line-height: 26px;
 }
+
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 2.8em;
+    }
+    .sub-hero {
+        font-size: 1.129em;
+    }
+    .item-infos {
+        width: 93%;
+    }
+    .itemImage {
+        border: 3px solid white;
+    }
+    #searchField {
+        margin-bottom: 7px;
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    .hero-text {
+        font-size: 2em;
+        padding-bottom: 5px;
+    }
+    .sub-hero {
+        font-size: 1.129em;
+    }
+    .item-infos {
+        width: 93%;
+    }
+    .itemImage {
+        border: 3px solid white;
+    }
+    #searchField {
+        margin-bottom: 7px;
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {}
