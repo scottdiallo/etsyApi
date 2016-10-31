@@ -125,7 +125,14 @@ li {
 
 /*ipad lanscape / small laptop*/
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    .hero-text {
+        font-size: 4em;
+    }
+    .sub-hero {
+        font-size: 1.8em;
+    }
+}
 
 
 /*ipad potrait*/
@@ -167,6 +174,7 @@ li {
     }
     #searchField {
         margin-bottom: 7px;
+        width: auto;
     }
 }
 
