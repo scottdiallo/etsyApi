@@ -3,35 +3,39 @@ html {
 }
 
 #searchBtn:hover {
-    background: gold;
+    background: #d5641c;
     color: white;
 }
 
 body {
-    background-image: url(../images/transparent.jpg);
+  /*  background: url(../images/background2.jpg);
+       background-color: rgba(55, 25, 25, 0.68);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 0px;*/
 }
 
 .hero-text {
     font-size: 6em;
-    font-family: inherit;
-    color: white;
-    line-height: 2rem;
+    font-family: arial;
+    color: #d5641c;
+    padding-top: 2.2rem;
+    padding-bottom: 7rem;
 }
 
-.sub-hero {
-    width: 784px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 45px;
-    color: ghostwhite;
-    font-size: 2em;
-    font-family: monospace;
+.module {
+    margin-top: -5.5%;
     width: 100%;
-    line-height: 1.3em;
-    margin-top: -30px;
+    height: 100vh;
+    
+    background-size: cover;
+}
+.darken {
+      background-image: linear-gradient( rgba(0, 0, 0, 1.9),
+       rgba(0, 0, 0, 0.6) ) ,
+       url(../images/bg-image.png);
 }
 
 form {
@@ -63,7 +67,7 @@ form {
 }
 
 img {
-    border: 1px solide black;
+    border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 3rem;
     margin-top: 25px;
