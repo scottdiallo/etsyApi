@@ -2,6 +2,8 @@
 Thinkful (http://www.thinkful.com) Portofolio Excercise - API App
 integrating with the *Etsy Open Platform API
 
+[url=https://postimg.org/image/w9bwmd2ir/][img]https://s13.postimg.org/vwkig6k93/etsy_screenshot.png[/img][/url][url=https://postimage.org/]image hosting 10mb limit[/url]
+
 ## Background
 I built this app because i like the simplicity of browsing without any ads.
 
