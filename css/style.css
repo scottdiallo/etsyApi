@@ -8,13 +8,7 @@ html {
 }
 
 body {
-  /*  background: url(../images/background2.jpg);
-       background-color: rgba(55, 25, 25, 0.68);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;*/
+ 
 }
 
 .hero-text {
@@ -28,14 +22,15 @@ body {
 .module {
     margin-top: -5.5%;
     width: 100%;
-    height: auto;
+    height: 100vh;
     
     background-size: cover;
 }
 .darken {
       background-image: linear-gradient( rgba(0, 0, 0, 1.9),
        rgba(0, 0, 0, 0.6) ) ,
-       url(../images/bg-image.png);
+       url(../images/bg-image.png);    background-repeat: no-repeat;
+
 }
 
 form {
