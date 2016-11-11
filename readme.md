@@ -1,9 +1,7 @@
 # EtsyApi
 Thinkful (http://www.thinkful.com) Portofolio Excercise - API App
 integrating with the *Etsy Open Platform API
-
-[url=https://postimg.org/image/w9bwmd2ir/][img]https://s13.postimg.org/vwkig6k93/etsy_screenshot.png[/img][/url][url=https://postimage.org/]image hosting 10mb limit[/url]
-
+https://s13.postimg.org/vwkig6k93/etsy_screenshot.png
 ## Background
 I built this app because i like the simplicity of browsing without any ads.
 
@@ -14,8 +12,9 @@ This app will be useful to anyone who like to shop without ads poping up or any 
 https://scottdiallo.github.io/etsyApi/
 
 ##Technical
-The app is built entirely using jQuery and make use of AJAX call to the etsy api platform API.
+The app is built entirely using jQuery, HTML , CSS. 
+I made use of AJAX call to the etsy api platform to access the information i needed.
 
 ## Development Roadmap
 * I will be building more feature to make it easy to use and provide better experience to the user.
-* add a clean and good looking background
+* add a clean and good looking background / more eye catching.
