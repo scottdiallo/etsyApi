@@ -19,4 +19,5 @@ The app is built entirely using jQuery and make use of AJAX call to the etsy api
 
 ## Development Roadmap
 * I will be building more feature to make it easy to use and provide better experience to the user.
+* build a mobile navigation 
 * add a clean and good looking background
