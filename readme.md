@@ -17,12 +17,11 @@ This app will be useful to anyone who like to shop without ads poping up or any 
 https://scottdiallo.github.io/etsyApi/
 
 ##Technical
-The app is built entirely using jQuery, HTML , CSS. 
+The app is built entirely using jQuery, HTML , CSS.
 I made use of AJAX call to the etsy api platform to access the information i needed.
 
 ## Development Roadmap
 * I will be building more feature to make it easy to use and provide better experience to the user.
 * add a clean and good looking background / more eye catching.
-* build a mobile navigation 
+* build a mobile navigation
 * add a clean and good looking background
->>>>>>> faa9a8b09a5d91217c7dc95ab7bc8282da42277d
